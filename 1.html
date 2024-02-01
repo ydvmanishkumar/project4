@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: url(../website.html/1.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+            height: 100vh;
+        } 
+        .menubar{
+            background: rgb(28, 0, 100);
+            text-align: center;
+        }
+        .menubar ul{
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+        .menubar ul li{
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+        .menubar ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .active,.menubar ul li:hover{
+            background: #ff7200;
+        }
+        .submenu{
+            display: none;
+        }
+        .menubar ul li:hover .submenu{
+            display: block;
+            position: absolute;
+            background: rgb(109, 16, 70);
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        .menubar ul li:hover .submenu ul{
+             display: block;
+             margin: 10px;
+        }
+        .menubar ul li:hover .submenu ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px dotted #fff;
+            background: transparent;
+            border-radius: 0;
+            text-align: left
+            ;
+
+
+        }
+
+    </style>
+</head>
+<body>
+   <div class="menubar">
+     <ul>
+        <li class="active"><a href="#"<i class="fa-solid fa-house fa-flip"></i>Home</a></li>
+        <li><a href="#">About us</a>
+          <div class="submenu">
+            <ul>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Hobby</a></li>
+                <li><a href="#">Start-up</a></li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Investers</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+   </div>
+</body>
+</html>
